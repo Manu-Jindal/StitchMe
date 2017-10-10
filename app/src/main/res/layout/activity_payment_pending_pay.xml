@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkg9"
+    tools:context="com.manujindal.stichme.Payment">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="471dp"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginBottom="20dp"
+                android:layout_row="0"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="left|center_vertical"
+                android:text="Payment Given:"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/advancePaymentTextField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="50dp"
+                android:layout_row="1"
+                android:backgroundTint="#000000"
+                android:ems="10"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center_vertical|center_horizontal"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/cashPaymentButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_row="2"
+                android:background="@drawable/button7"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center_vertical|center_horizontal"
+                android:onClick="cashPaid"
+                android:text="CASH"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/onlinePaymentButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_row="3"
+                android:background="@drawable/button7"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center_vertical|center_horizontal"
+                android:onClick="onlinePaid"
+                android:text="ONLINE"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/walletPaymentButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_row="4"
+                android:background="@drawable/button7"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center_vertical|center_horizontal"
+                android:onClick="walletPaid"
+                android:text="WALLET"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+        </GridLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

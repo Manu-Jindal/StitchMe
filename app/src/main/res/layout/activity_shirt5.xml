@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.manujindal.stichme.Shirt5">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_row="0"
+            android:text="Choose Collar Type"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="368dp"
+            android:layout_height="400dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_below="@+id/textView21"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <ImageButton
+                    android:id="@+id/RegularStraightPointCollar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_row="1"
+                    android:onClick="nextActFromMain"
+                    android:tag="Regular Straight Point Collar"
+                    app:srcCompat="@drawable/shirt51resized" />
+
+                <TextView
+                    android:id="@+id/RegularStraightPointCollar1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_row="2"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Regular Straight\nPoint Collar"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/LowStraightPointCollar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_row="3"
+                    android:onClick="nextActFromMain"
+                    android:tag="Low Straight Point Collar"
+                    app:srcCompat="@drawable/shirt52resized" />
+
+                <TextView
+                    android:id="@+id/preferenceLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_row="4"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Low Straight\nPoint Collar"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/SemiSpreadCollar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_row="5"
+                    android:onClick="nextActFromMain"
+                    android:tag="Semi-Spread Collar"
+                    app:srcCompat="@drawable/shirt53resized" />
+
+                <TextView
+                    android:id="@+id/SemiSpreadCollar1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_row="6"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Semi-Spread Collar"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/ButtonDownCollar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_row="7"
+                    android:onClick="nextActFromMain"
+                    android:tag="Button-Down Collar"
+                    app:srcCompat="@drawable/shirt54resized" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_row="8"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Button-Down Collar"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/HighButtonDownCollar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_row="9"
+                    android:onClick="nextActFromMain"
+                    android:tag="High Button-Down Collar"
+                    app:srcCompat="@drawable/shirt55resized" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_row="10"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="High Button-Down Collar"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/SpreadCollar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_row="11"
+                    android:onClick="nextActFromMain"
+                    android:tag="Spread Collar"
+                    app:srcCompat="@drawable/shirt56resized" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_row="12"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Spread Collar"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/SpreadCollarWithShortPoints"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_row="13"
+                    android:onClick="nextActFromMain"
+                    android:tag="Spread Collar With Short Points"
+                    app:srcCompat="@drawable/shirt51resized" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_row="14"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Spread Collar\nWith Short Points"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/WingCollar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_row="15"
+                    android:onClick="nextActFromMain"
+                    android:tag="Wing Collar"
+                    app:srcCompat="@drawable/shirt58resized" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_row="16"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Wing Collar"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/BandCollar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_row="17"
+                    android:onClick="nextActFromMain"
+                    android:tag="Band Collar"
+                    app:srcCompat="@drawable/shirt59resized" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_row="18"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Band Collar"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/Bandcollarwithoutbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_row="19"
+                    android:onClick="nextActFromMain"
+                    android:tag="Band Collar without button"
+                    app:srcCompat="@drawable/shirt510resized" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_row="20"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Band Collar\nwithout button"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/HighStraightPointCollarWith2Buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_row="21"
+                    android:onClick="nextActFromMain"
+                    android:tag="High Straight Point Collar With 2 Buttons"
+                    app:srcCompat="@drawable/shirt511resized" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_row="22"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="High Straight Point\nCollar With\n2 Buttons"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/HighSpreadCollarWith2Buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_row="23"
+                    android:onClick="nextActFromMain"
+                    android:tag="High Spread Collar With 2 Buttons"
+                    app:srcCompat="@drawable/shirt512resized" />
+
+                <TextView
+                    android:id="@+id/fitLabel2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_row="24"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="High Spread Collar\nWith 2 Buttons"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/AngledBandCollar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_row="25"
+                    android:onClick="nextActFromMain"
+                    android:tag="Angled Band Collar"
+                    app:srcCompat="@drawable/shirt513resized" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_row="26"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Angled Band Collar"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/OpenBandCollar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_row="27"
+                    android:onClick="nextActFromMain"
+                    android:tag="Open Band Collar"
+                    app:srcCompat="@drawable/shirt514resized" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_row="28"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Open Band Collar"
+                    android:textSize="20sp" />
+
+            </GridLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkg10"
+    tools:context="com.manujindal.stichme.DashboardOrderStatus">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="471dp"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ListView
+                android:id="@+id/orderstatuseslist"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_marginRight="2dp"
+                android:layout_row="0"
+                android:layout_weight="1"
+                android:background="@drawable/list_background"
+                android:divider="#000000"
+                android:dividerHeight="1dp"/>
+
+            <ListView
+                android:id="@+id/ordernumberslist"
+                android:layout_width="195dp"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:layout_weight="1"
+                android:background="@drawable/list_background"
+                android:divider="#000000"
+                android:dividerHeight="1dp"/>
+        </GridLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

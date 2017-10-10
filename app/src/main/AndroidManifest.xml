@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.manujindal.stichme">
+
+    <supports-screens android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:configChanges="orientation|screenSize"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/element"
+        android:label="StitchMe"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:textColor="#D3D3D3"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name=".GenericFileProvider"
+            android:authorities="${applicationId}.my.package.name.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <receiver android:name=".AlarmReceiver">
+            <intent-filter>
+                <action android:name="android.media.action.DISPLAY_NOTIFICATION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LaunchVideo"
+            android:label="StitchMe">
+        </activity>
+        <activity
+            android:name=".Main2"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".EnterEmail"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".KYC2"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ChooseItem"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".SelectFabric0"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Shirt1"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Shirt2"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Shirt3"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Shirt4"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Shirt5"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".GetMeasured"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".EnterName"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ClothType"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".GetMeasured1"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".GetMeasured2"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".GetMeasured3"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".GetMeasured4"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".GetMeasured5"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".GetMeasured6"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".AllRecords"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".DetailedRecord"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".EditRecord"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Suit1"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Suit2"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Suit3"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Suit4"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Suit5"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Suit6"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Trouser1"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Trouser2"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Trouser3"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Trouser4"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Trouser5"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Trouser6"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Suit7"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Suit8"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ReviewRecord"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".EnterTrialDate"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".EnterDeliveryDate"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".BillAmount"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".CustomerExists"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".CustomersList"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".EnterOrderNumber"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".CustomerDetails"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".EditCustomer"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Shirt6"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".AddItem"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ItemDetails"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Suit9"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MeasurementCategories"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MeasurementChanged"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Measurement01"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Measurement02"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Measurement03"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Measurement04"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Measurement05"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Measurement06"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Measurement07"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Measurement08"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Measurement09"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Measurement10"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Measurement11"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Measurement12"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Measurement13"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Measurement14"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Measurement15"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Measurement16"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Measurement17"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Measurement18"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Measurement19"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Measurement20"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Measurement21"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Measurement22"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Measurement23"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Measurement24"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Measurement25"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Measurement26"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Measurement27"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Measurement28"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Measurement29"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Measurement30"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Measurement31"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".FabricLogin"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".FabricList"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".AddFabric"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".FabricDetails"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Payment"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".PayTMQRCode"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Dashboard"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".DashboardOrderStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".DashboardDate"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".DashboardChooseDate"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".AdminPanel"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".PaymentPendingAlert"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".PaymentPendingPay"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".PaymentPendingPayTM"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".PaymentStatus"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".EnterAddress"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".EmployeeList"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".AddEmployee"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".SendDetailsEmployee"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".InitialLogin"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Others"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".AppointmentCustomerDetails"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".AddAppointment"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".AllAppointments"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".AppointmentDetails"
+            android:windowSoftInputMode="adjustPan" ></activity>
+    </application>
+
+</manifest>

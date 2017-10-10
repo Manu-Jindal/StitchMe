@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.manujindal.stichme.EnterDeliveryDate">
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foregroundGravity="center_vertical|center_horizontal">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:foregroundGravity="center_vertical|center_horizontal">
+
+                <TextView
+                    android:id="@+id/NameLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_above="@+id/datePicker"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_column="0"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_row="0"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="left|center_vertical"
+                    android:text="Enter Delivery Date"
+                    android:textSize="30sp" />
+
+                <DatePicker
+                    android:id="@+id/datePicker2"
+                    android:layout_width="275dp"
+                    android:layout_height="400dp"
+                    android:layout_alignLeft="@+id/NameLabel"
+                    android:layout_alignStart="@+id/NameLabel"
+                    android:layout_centerVertical="true"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginTop="-30dp"
+                    android:layout_marginBottom="-20dp"
+                    android:layout_row="1"
+                    android:background="@android:color/background_light"
+                    android:calendarTextColor="#000000"
+                    android:dayOfWeekBackground="?android:attr/textColor"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:foregroundGravity="center_vertical|center_horizontal"
+                    android:foregroundTint="#d3d3d3"
+                    android:headerBackground="?android:attr/textColor"
+                    android:padding="-60dp"
+                    android:scaleY="0.80" />
+
+                <Button
+                    android:id="@+id/NextPage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/datePicker"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_row="2"
+                    android:background="@drawable/button1"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:onClick="nextActFromMain"
+                    android:text="Next"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </GridLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.manujindal.stichme.ChooseItem">
+
+    <RelativeLayout
+        android:layout_width="318dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.538">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_vertical|center_horizontal"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <Button
+                    android:id="@+id/shirt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_margin="10dp"
+                    android:layout_row="0"
+                    android:background="@drawable/button3"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:onClick="shirtselected"
+                    android:padding="50dp"
+                    android:text="Shirt" />
+
+                <Button
+                    android:id="@+id/suit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_margin="10dp"
+                    android:layout_row="0"
+                    android:background="@drawable/button3"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:onClick="suitselected"
+                    android:padding="50dp"
+                    android:text="suit" />
+
+                <Button
+                    android:id="@+id/trouser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_row="1"
+                    android:background="@drawable/button3"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:onClick="trouserselected"
+                    android:paddingBottom="50dp"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    android:paddingTop="50dp"
+                    android:text="trouser" />
+
+                <Button
+                    android:id="@+id/others"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_row="1"
+                    android:background="@drawable/button3"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:onClick="otherselected"
+                    android:paddingBottom="50dp"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    android:paddingTop="50dp"
+                    android:text="others" />
+
+
+            </GridLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

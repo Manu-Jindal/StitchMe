@@ -1,0 +1,2094 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkg4"
+    tools:context="com.manujindal.stichme.DetailedRecord">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foregroundGravity="center_vertical|center_horizontal">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:foregroundGravity="center_vertical|center_horizontal">
+
+                <ListView
+                    android:id="@+id/detailedRecordList"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_column="0"
+                    android:layout_columnSpan="2"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_row="0"
+                    android:layout_weight="1"
+                    android:background="@drawable/list_background"
+                    android:divider="#000000"
+                    android:dividerHeight="1dp" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_row="1"
+                    android:background="@drawable/button10"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:foregroundGravity="center_vertical|center_horizontal"
+                    android:onClick="goBack"
+                    android:text="View All Records"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_row="1"
+                    android:background="@drawable/button10"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:foregroundGravity="center_vertical|center_horizontal"
+                    android:onClick="backHome"
+                    android:text="Back To Home"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/shareDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_row="2"
+                    android:layout_columnSpan="2"
+                    android:background="@drawable/button10"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:foregroundGravity="center_vertical|center_horizontal"
+                    android:onClick="shareDetails"
+                    android:text="Share Details"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_width="320dp"
+                    android:layout_height="400dp"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_row="0"
+                    android:foregroundGravity="center_vertical|center_horizontal"
+                    android:visibility="gone">
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:foregroundGravity="center_horizontal">
+
+                        <GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_row="0"
+                            android:foregroundGravity="center_horizontal">
+
+
+                            <TextView
+                                android:id="@+id/OrderNumber_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="0"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:onClick="test"
+                                android:text="OrderNumber:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/OrderNumber"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="0"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:onClick="test"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/OrderDate_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="1"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Order Date:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/OrderDate"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="1"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/TrialDate_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="2"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Trial Date:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/TrialDate"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="2"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/DeliveryDate_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="3"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Delivery Date:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/DeliveryDate"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="3"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/BillAmount_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="4"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Bill Amount:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/BillAmount"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="4"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                        </GridLayout>
+
+                        <GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_row="1"
+                            android:foregroundGravity="center_vertical|center_horizontal">
+
+                            <TextView
+                                android:id="@+id/LowerGarment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_columnSpan="2"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_row="53"
+                                android:elevation="0dp"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="1"
+                                android:maxLines="3"
+                                android:text="Lower Garment"
+                                android:textSize="30sp" />
+
+                            <TextView
+                                android:id="@+id/UpperGarment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_columnSpan="2"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_row="32"
+                                android:elevation="0dp"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="2"
+                                android:maxLines="3"
+                                android:text="Measurement\nUpper Garment:"
+                                android:textSize="30sp" />
+
+                            <TextView
+                                android:id="@+id/AdvancePaid_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="0"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Advance Paid:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/AdvancePaid"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="0"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Name_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="1"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Name:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Name"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="1"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Dob_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="2"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="DOB:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Dob"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="2"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Email_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="3"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Email:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Email"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="3"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Phone_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="4"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Phone:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Phone"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="4"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Occupation_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="5"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Occupation:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Occupation"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="5"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/TypePreference_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="6"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Wear Preference:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/TypePreference"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="6"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/ShirtColourType_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="7"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Shirt Colour:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/ShirtColourType"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="7"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/ShirtPatternType_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="8"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Shirt Pattern:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/ShirtPatternType"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="8"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/SuitColourType_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="9"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Suit Colour:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/SuitColourType"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="9"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/SuitPatternType_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="10"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Suit Pattern:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/SuitPatternType"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="10"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/TrouserColourType_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="11"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Trouser Colour:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/TrouserColourType"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="11"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/TrouserPatternType_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="12"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Trouser Pattern:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/TrouserPatternType"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="12"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Shirt_SleeveType_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="13"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Shirt Sleeve Type:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Shirt_SleeveType"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="13"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Shirt_PocketType_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="14"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Shirt Pocket Type:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Shirt_PocketType"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="14"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Shirt_CuffType_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="15"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Shirt Cuff Type:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Shirt_CuffType"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="15"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Shirt_FitType_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="16"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Shirt Fit Type:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Shirt_FitType"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="16"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Shirt_CollarType_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="17"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Shirt Collar Type:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Shirt_CollarType"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="17"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Suit_FitType_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="18"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Suit Fit Type:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Suit_FitType"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="18"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Suit_JacketType_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="19"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Suit Jacket Type:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Suit_JacketType"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="19"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+
+                            <TextView
+                                android:id="@+id/Suit_LapelType_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="20"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Suit Lapel Type:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Suit_LapelType"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="20"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+
+                            <TextView
+                                android:id="@+id/Suit_BottomCutType_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="21"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Suit Bottom Cut\nType:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Suit_BottomCutType"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="21"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+
+                            <TextView
+                                android:id="@+id/Suit_VestType_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="22"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Suit Vest Type:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Suit_VestType"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="22"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+
+                            <TextView
+                                android:id="@+id/Suit_PocketType_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="23"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Suit Pocket Type:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Suit_PocketType"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="23"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+
+                            <TextView
+                                android:id="@+id/Suit_SleeveButtonType_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="24"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Suit_Sleeve\nButton Type"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Suit_SleeveButtonType"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="24"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+
+                            <TextView
+                                android:id="@+id/Suit_VentType_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="25"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Suit Pocket Type:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Suit_VentType"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="25"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Trouser_FitType_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="26"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Trouser Fit Type:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Trouser_FitType"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="26"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Trouser_PantPleatsType_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="27"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Trouser Pant\nPleats Type:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Trouser_PantPleatsType"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="27"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+
+                            <TextView
+                                android:id="@+id/Trouser_PantPocketType_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="28"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Trouser_Pant\nPocket Type:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Trouser_PantPocketType"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="28"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+
+                            <TextView
+                                android:id="@+id/Trouser_BackPocketStyleType_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="29"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Trouser_Back Pocket\nStyle Type:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Trouser_BackPocketStyleType"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="29"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+
+                            <TextView
+                                android:id="@+id/Trouser_BackPocketType_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="30"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Trouser Back\nPocket Type:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Trouser_BackPocketType"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="30"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+
+                            <TextView
+                                android:id="@+id/Trouser_BeltLoopsType_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="31"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Trouser Belt\nLoops Type:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Trouser_BeltLoopsType"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="31"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement1_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="33"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Upper Chest:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement1"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="33"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement2_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="34"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Round Chest:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement2"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="34"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement3_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="35"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Lower Chest:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement3"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="35"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement4_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="36"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Length Shirt:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement4"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="36"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement5_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="37"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Length Suit:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement5"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="37"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement6_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="38"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Stomach:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement6"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="38"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement7_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="39"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Round Hip:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement7"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="39"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement8_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="40"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Across Front:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement8"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="40"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement9_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="41"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Across Back:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement9"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="41"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement10_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="42"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Across Shoulders:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement10"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="42"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement11_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="43"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Side Shoulder:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement11"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="43"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement12_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="44"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Round Neck(Collar):"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement12"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="44"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement13_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="45"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Lapei"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement13"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="45"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement14_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="46"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Sleeve Length:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement14"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="46"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement15_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="47"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Armhole:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement15"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="47"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement16_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="48"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Biceps:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement16"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="48"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement17_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="49"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Elbow:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement17"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="49"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement18_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="50"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Sleeve Bottom:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement18"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="50"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement19_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="51"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Cuff Length"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement19"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="51"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement20_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="52"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Cuff Width"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement20"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="52"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement21_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="54"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Length:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement21"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="54"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement22_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="55"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Round Waist:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement22"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="55"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement23_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="56"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Round Hip"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement23"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="56"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement24_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="57"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Round Thigh:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement24"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="57"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement25_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="58"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Round Knee"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement25"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="58"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement26_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="59"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Calf:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement26"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="59"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement27_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="60"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Crotch:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement27"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="60"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement28_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="61"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Fog:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement28"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="61"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement29_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="62"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="In-Seam:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement29"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="62"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement30_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="63"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Bottom(Mori):"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement30"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="63"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement31_OutputLabel"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="64"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="Belt Width:"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/Measurement31"
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_row="64"
+                                android:foregroundGravity="center_vertical|center_horizontal"
+                                android:gravity="center_vertical"
+                                android:lines="3"
+                                android:maxLines="3"
+                                android:text="TextView"
+                                android:textSize="20sp" />
+
+                        </GridLayout>
+
+                    </GridLayout>
+                </android.support.v4.widget.NestedScrollView>
+
+            </GridLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

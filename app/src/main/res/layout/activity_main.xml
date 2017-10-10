@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background1"
+    tools:context="com.manujindal.stichme.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:gravity="bottom|center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="bottom|center_horizontal">
+
+            <Button
+                android:id="@+id/newRecord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/viewRecords"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_column="0"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_row="0"
+                android:background="@drawable/button2"
+                android:foregroundGravity="center_vertical|center_horizontal"
+                android:onClick="newRecord"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="Enter New Order"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/viewRecords"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/newRecord"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/newRecord"
+                android:layout_column="0"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_row="1"
+                android:background="@drawable/button2"
+                android:foregroundGravity="center_vertical|center_horizontal"
+                android:onClick="allRecords"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="View all Orders"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/viewAdminPanel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_row="4"
+                android:background="@drawable/button2"
+                android:foregroundGravity="center_vertical|center_horizontal"
+                android:onClick="viewAdminPanel"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="Admin Panel"
+                android:textColor="#ffffff" />
+
+        </GridLayout>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.manujindal.stichme.Suit3">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_row="0"
+            android:text="Choose Lapel Type"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="368dp"
+            android:layout_height="400dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <ImageButton
+                    android:id="@+id/LapelType1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_row="1"
+                    android:onClick="nextActFromMain"
+                    android:tag="Peak Lapel"
+                    app:srcCompat="@drawable/suit21resized" />
+
+                <TextView
+                    android:id="@+id/LapelTypeLabel1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_row="2"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Peak Lapel"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/LapelType2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_row="3"
+                    android:onClick="nextActFromMain"
+                    android:tag="Notch Lapel"
+                    app:srcCompat="@drawable/suit22resized" />
+
+                <TextView
+                    android:id="@+id/LapelTypeLabel2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_row="4"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Notch Lapel"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/LapelType3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_row="5"
+                    android:onClick="nextActFromMain"
+                    android:tag="Round Notch Lapel"
+                    app:srcCompat="@drawable/suit23resized" />
+
+                <TextView
+                    android:id="@+id/LapelTypeLabel3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_row="6"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Round Notch Lapel"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/LapelType4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_row="7"
+                    android:onClick="nextActFromMain"
+                    android:tag="Shawl Lapel"
+                    app:srcCompat="@drawable/suit24resized" />
+
+                <TextView
+                    android:id="@+id/LapelTypeLabel4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_row="8"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Shawl Lapel"
+                    android:textSize="20sp" />
+
+            </GridLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
